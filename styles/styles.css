@@ -1,0 +1,116 @@
+@import './variables.css';
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-background-color);
+    font-family: var(--body-font-family);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.container__header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-background-color);
+}
+
+.container__header h1 {
+    margin: 10px;
+    font-weight: var(--h1-font-weight);
+}
+
+.container__main {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container__main-card {
+    width: 500px;
+    height: auto;
+    margin: 15px;
+    background-color: var(--card-background-color);
+    border-radius: 15px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;;
+}
+
+.container__main-card img {
+    width: 40%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.card__info h2, h3, p {
+    margin: 0;
+}
+
+.card__info h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    margin-bottom: 12px;
+}
+
+.container__main-card .card__info h2, p {
+    color: var(--cards-headers-color);
+}
+
+.card__info {
+    width: 250px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+
+
+.card__info p {
+    font-weight: var(--paragraphs-font-weight);
+    font-size: var(--paragraphs-font-size);
+    margin-bottom: 12px;
+}
+
+.container__main-card .card__info h3 {
+    color: var(--h3-color);
+    font-size: var(--h3-font-size);
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        height: auto;
+    }
+
+    .container__main {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        height: auto;
+    }
+
+    .container__header h1 {
+        font-size: 20px;
+    }
+
+    .container__main {
+        height: auto;
+    }
+
+    .container__main-card .card__info h2 {
+        font-size: 20px;
+    }
+
+}
