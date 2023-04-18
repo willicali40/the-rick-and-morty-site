@@ -38,7 +38,7 @@ body {
 }
 
 .container__main-card {
-    width: 500px;
+    width: 600px;
     height: auto;
     margin: 15px;
     background-color: var(--card-background-color);
@@ -48,7 +48,7 @@ body {
 }
 
 .container__main-card img {
-    width: 40%;
+    width: 50%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
@@ -96,7 +96,7 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .container {
         height: auto;
     }
@@ -109,8 +109,16 @@ body {
         height: auto;
     }
 
+    .container__main-card {
+        width: 400px;
+    }
     .container__main-card .card__info h2 {
-        font-size: 20px;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .container__main-card .card__info p {
+        font-size: 14px;
     }
 
 }
